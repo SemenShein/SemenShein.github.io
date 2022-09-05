@@ -1,2 +1,2 @@
-# SemenSheincourse.github.io
+# Семен Шеин
 Мой первый сайт
