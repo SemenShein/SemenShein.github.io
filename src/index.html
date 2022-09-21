@@ -8,6 +8,8 @@
     <meta name="robots" content="index, follow">
 <!--OpenGraph-->
     <meta property="og:title" content="This is my first page...">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Семен Шеин - Веб-разработчик.</title>
 </head>
 <body>
@@ -17,12 +19,12 @@
             <div class="logo">Семен Шеин</div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <a href=""><li>Обо мне</li></a>
+                    <a href=""><li>Услуги</li></a>
+                    <a href=""><li>Кейсы</li></a>
+                    <a href=""><li>Прайс</li></a>
+                    <a href=""><li>Отзывы</li></a>
+                    <a href=""><li>Контакты</li></a>
                 </ul>
             </div>
         </nav>
@@ -38,14 +40,14 @@
         <div class="about_me">
             <h1>Обо мне</h1>
             <div class="line"></div>
-            <img src="#" alt="#">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
+            <img src="img/photo.png" alt="#">
+            <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
+            <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
             <input type="submit" value="Скачать резюме">
         </div>
 <!--        Блок "Что я умею"-->
         <div class="i_can">
-            <h2>Что я умею</h1>
+            <h2>Что я умею</h2>
             <div class="line"></div>
             <div class="design">
                 <img src="img/note.png" alt="#">
@@ -72,15 +74,16 @@
         <div class="case">
             <h2>Кейсы</h2>
             <div class="line"></div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consequatur officia perspiciatis</span>
+            <span id="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consequatur officia perspiciatis</span>
             <div class="gallery">
+               <img src="img/case_photo.png" alt="">
                 <div class="descript">
                     <h3>CLIENT:</h3>
                     <span>Какая-то компания</span>
                     <h3>WEBSITE:</h3>
                     <span>http://www.somedomain.com</span>
-                    <h3>Название проекта</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum qui architecto, unde odio maxime accusantium quos ipsa similique! Odio voluptatem rem officiis quod recusandae quisquam dolorum doloremque voluptates! Unde, deserunt, vitae libero dignissimos officia maxime iste rerum quas est consequuntur.</p>
+                    <h3 id="pro_name">Название проекта</h3>
+                    <p id="pro_name_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum qui architecto, unde odio maxime accusantium quos ipsa similique! Odio voluptatem rem officiis quod recusandae quisquam dolorum doloremque voluptates! Unde, deserunt, vitae libero dignissimos officia maxime iste rerum quas est consequuntur.</p>
                     <input type="button" value="visit live site">
                 </div>
             </div>
@@ -91,26 +94,26 @@
             <h3>ТИП САЙТА:</h3>
             <form action="#">
                 <select name="list1" id="list1">
-                    <option value="opt1">option1</option>
+                    <option value="opt1">Выберите пункт...</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
                 </select>
             <h3>ДИЗАЙН:</h3>
                 <select name="list2" id="list2">
-                    <option value="opt1">option1</option>
+                    <option value="opt1">Выберите пункт...</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
                 </select>
             <h3>АДАПТИВНОСТЬ:</h3>
                 <select name="list3" id="list3">
-                    <option value="opt1">option1</option>
+                    <option value="opt1">Выберите пункт...</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
                 </select>
             </form>
-            <hr>
+           <div id="total_line"></div>
             <div class="total">
-                <p>сроки 0</p>
+                <p>Cроки 0</p>
                 <p>Стоимость 0</p>
             </div>
         </div>
@@ -143,38 +146,35 @@
         <div class="reviews">
             <h2>ОТЗЫВЫ</h2>
             <div class="line"></div>
-            <img src="#" alt="#">
+            <img src="img/man_rev.png" alt="#">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae assumenda totam dolor omnis tenetur unde laudantium atque quaerat voluptates? Veritatis doloribus esse culpa expedita a sint soluta rem, quibusdam, odit.</p>
-            <span><b>Михаил,Ген.директор ПАО "Газпром"</b></span>
+            <p><b>Михаил</b>,Ген.директор ПАО "Газпром"</p>
         </div>
 <!--        Блок контакты-->
         <div class="contacts">
             <h2>Мои контакты</h2>
             <div class="line"></div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, assumenda.</span>
-            <img src="#" alt="#">
-            <span>Санкт-Петербург<br>Невский проспект 11</span>
-            <img src="#" alt="#">
-            <span>info@companyname.com</span>
-            <img src="#" alt="#">
-            <span>+7 999 999-99-99</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consectetur earum labore.</span>
+            
+            <img src="img/geo.png" alt="#" id="geo">
+            <p>Санкт-Петербург<br>Невский проспект 11</p>
+            <img src="img/mail.png" alt="#" id="mail">
+            <p>info@companyname.com</p>
+            <img src="img/phone.png" alt="#" id="phone">
+            <p>+7 999 999-99-99</p>
             <h3>оставьте мне сообщение</h3>
+            
             <form action="#">
-                <input type="text"name="text_input" value="" placeholder="Имя">
-                <input type="text"name="text_input" value="" placeholder="Email">
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Отправить">
+                <input type="text"name="text_input" value="" placeholder="Имя" id="name">
+                <input type="text"name="text_input" value="" placeholder="Email" id="mail">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение" ></textarea>
+                <input type="submit" value="Отправить" id="button">
             </form>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="card">
+            <div id="here">i'am here</div>
         </div>
         <footer>
-            <div class="card"></div>
-            <span>Copyright © 2021 Андрей Браун. Design by Web</span>
+            <p id="copy">Copyright © 2021 Андрей Браун. Design by Web</p>
         </footer>
     </div>
 </body>
