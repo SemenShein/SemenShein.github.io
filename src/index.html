@@ -8,33 +8,67 @@
     <meta name="robots" content="index, follow">
 <!--OpenGraph-->
     <meta property="og:title" content="This is my first page...">
+<!--   /* <link rel="stylesheet" href="css/loader.css">*/-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        // Прелоадер
+        $(window).load(function() {
+        $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+        });
+    </script>
     <title>Семен Шеин - Веб-разработчик.</title>
 </head>
 <body>
+        <style>
+            /* Прелоадер */
+            #before-load {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            z-index: 9999; 
+            }
+            #before-load i {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: url( img/preloader.gif) no-repeat 50% 50%;
+            margin: -35px 0 0 -35px;
+            }
+        </style>
+          <div id="before-load">
+            <i></i>
+          </div>
+
 <!--   Шапка-->
     <header>
         <nav>
             <div class="logo">Семен Шеин</div>
             <div class="menu">
                 <ul>
-                    <a href=""><li>Обо мне</li></a>
-                    <a href=""><li>Услуги</li></a>
-                    <a href=""><li>Кейсы</li></a>
-                    <a href=""><li>Прайс</li></a>
-                    <a href=""><li>Отзывы</li></a>
-                    <a href=""><li>Контакты</li></a>
+                    <li><a href="">Обо мне</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Кейсы</a></li>
+                    <li><a href="">Прайс</a></li>
+                    <li><a href="">Отзывы</a></li>
+                    <li><a href="">Контакты</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="main">
-        <div class="title_container">
+        <div class="title_container animate__animated animate__backInLeft">
             <h1>Привет<br> Я Семен Шеин</h1>
             <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
         </div>
 <!--        Блок "обо мне"-->
         <div class="about_me">
