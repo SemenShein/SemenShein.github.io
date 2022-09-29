@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is my first page...">
+    <meta name="author" content="Semen">
+    <meta name="keywords" content="#"> 
+    <meta name="robots" content="index, follow">
+<!--OpenGraph-->
+    <meta property="og:title" content="This is my first page...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        // Прелоадер
+        $(window).load(function() {
+        $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+        });
+    </script>
+    <title>Семен Шеин - Веб-разработчик.</title>
+</head>
+<body>
+        <style>
+            /* Прелоадер */
+            #before-load {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            z-index: 9999; 
+            }
+            #before-load i {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: url( img/preloader.gif) no-repeat 50% 50%;
+            margin: -35px 0 0 -35px;
+            }
+        </style>
+          <div id="before-load">
+            <i></i>
+          </div>
+
+<!--   Шапка-->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-2 col-7"><div class="logo">Семен Шеин</div></div>
+                    <div class="px-0 col-xxl-6 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">            
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">Обо мне</a></li>
+                            <li><a href="">Услуги</a></li>
+                            <li><a href="">Кейсы</a></li>
+                            <li><a href="">Прайс</a></li>
+                            <li><a href="">Отзывы</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                          <button class="btn btn-outline-secondary dropdown-toggle white-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Навигация
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Обо мне</button></li>
+                            <li><button class="dropdown-item" type="button">Услуги</button></li>
+                            <li><button class="dropdown-item" type="button">Кейсы</button></li>
+                            <li><button class="dropdown-item" type="button">Прайс</button></li>
+                            <li><button class="dropdown-item" type="button">Отзывы</button></li>
+                            <li><button class="dropdown-item" type="button">Контакты</button></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main">
+           <div class="container h-100">
+               <div class="row align-items-center h-100">
+                   <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title_container animate__animated animate__backInLeft mt-3">
+                            <h1>Привет<br> Я Семен Шеин</h1>
+                            <h4><i class="fa fa-css3 custom-css3" aria-hidden="true"></i>
+                            Фулл стек веб-разработчик</h4>
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои работы">
+                        </div>
+                   </div>
+               </div>
+            </div>
+<!--        Блок "обо мне"-->
+        <div class="about_me">
+            <h1>Обо мне</h1>
+            <div class="line"></div>
+            <img src="img/photo.png" alt="#">
+            <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
+            <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
+            <input type="submit" value="Скачать резюме">
+        </div>
+<!--        Блок "Что я умею"-->
+        <div class="i_can">
+            <h2>Что я умею</h2>
+            <div class="line"></div>
+            <div class="design">
+                <img src="img/note.png" alt="#">
+                <h4>Веб-дизайн</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laborum.</p>
+            </div>
+            <div class="develop">
+                <img src="img/sign.png" alt="#">
+                <h4>Разработка</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laborum.</p>
+            </div>
+            <div class="seo">
+                <img src="img/rocket.png" alt="#">
+                <h4>СЕО-Оптимизация</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laborum.</p>
+            </div>
+            <div class="marketing">
+                <img src="img/gram.png" alt="#">
+                <h4>Маркетинг</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laborum.</p>
+            </div>
+        </div>
+<!--        Блок кейсов-->
+        <div class="case">
+            <h2>Кейсы</h2>
+            <div class="line"></div>
+            <span id="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consequatur officia perspiciatis</span>
+            <div class="gallery">
+               <img src="img/case_photo.png" alt="">
+                <div class="descript">
+                    <h3>CLIENT:</h3>
+                    <span>Какая-то компания</span>
+                    <h3>WEBSITE:</h3>
+                    <span>http://www.somedomain.com</span>
+                    <h3 id="pro_name">Название проекта</h3>
+                    <p id="pro_name_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum qui architecto, unde odio maxime accusantium quos ipsa similique! Odio voluptatem rem officiis quod recusandae quisquam dolorum doloremque voluptates! Unde, deserunt, vitae libero dignissimos officia maxime iste rerum quas est consequuntur.</p>
+                    <input type="button" value="visit live site">
+                </div>
+            </div>
+        </div>
+<!--        Блок рассчета стоимости-->
+       <div class="price">
+            <h2>Расчет стоимости</h2>
+            <h3>ТИП САЙТА:</h3>
+            <form action="#">
+                <select name="list1" id="list1">
+                    <option value="opt1">Выберите пункт...</option>
+                    <option value="opt2">option2</option>
+                    <option value="opt3">option3</option>
+                </select>
+            <h3>ДИЗАЙН:</h3>
+                <select name="list2" id="list2">
+                    <option value="opt1">Выберите пункт...</option>
+                    <option value="opt2">option2</option>
+                    <option value="opt3">option3</option>
+                </select>
+            <h3>АДАПТИВНОСТЬ:</h3>
+                <select name="list3" id="list3">
+                    <option value="opt1">Выберите пункт...</option>
+                    <option value="opt2">option2</option>
+                    <option value="opt3">option3</option>
+                </select>
+            </form>
+           <div id="total_line"></div>
+            <div class="total">
+                <p>Cроки 0</p>
+                <p>Стоимость 0</p>
+            </div>
+        </div>
+<!--       Блок статистики-->
+        <div class="stat">
+           <h2>Немного статистики</h2>
+           <div class="line"></div>
+           <div class="client">
+               <img src="img/smile.png" alt="#">
+               <h3>120</h3>
+               <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+           </div>
+           <div class="hours">
+               <img src="img/parent.png" alt="#">
+               <h3>4,600</h3>
+               <p>ЧАСОВ РАБОТЫ</p>
+           </div>
+           <div class="project_end">
+               <img src="img/check.png" alt="#">
+               <h3>120</h3>
+               <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+           </div>
+           <div class="awards">
+               <img src="img/cup.png" alt="#">
+               <h3>120</h3>
+               <p>НАГРАД ПОЛУЧЕНО</p>
+           </div>
+        </div>
+<!--       Блок отзывы-->
+        <div class="reviews">
+            <h2>ОТЗЫВЫ</h2>
+            <div class="line"></div>
+            <img src="img/man_rev.png" alt="#">
+            <figure>
+              <blockquote class="blockquote">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae assumenda totam dolor omnis tenetur unde laudantium atque quaerat voluptates? Veritatis doloribus esse culpa expedita a sint soluta rem, quibusdam, odit</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Михаил. Ген.директор <cite title="Source Title">ПАО "Газпром"</cite>
+              </figcaption>
+            </figure>
+        </div>
+<!--        Блок контакты-->
+        <div class="contacts">
+            <h2>Мои контакты</h2>
+            <div class="line"></div>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consectetur earum labore.</span>
+            
+            <img src="img/geo.png" alt="#" id="geo">
+            <p>Санкт-Петербург<br>Невский проспект 11</p>
+            <img src="img/mail.png" alt="#" id="mail">
+            <p>info@companyname.com</p>
+            <img src="img/phone.png" alt="#" id="phone">
+            <p>+7 999 999-99-99</p>
+            <h3>оставьте мне сообщение</h3>
+            
+            <form action="#">
+                <input type="text"name="text_input" value="" placeholder="Имя" id="name">
+                <input type="text"name="text_input" value="" placeholder="Email" id="mail">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение" ></textarea>
+                <input type="submit" value="Отправить" id="button">
+            </form>
+        <div class="card">
+            <div id="here">i'am here</div>
+        </div>
+        <footer>
+            <p id="copy">Copyright © 2021 Андрей Браун. Design by Web</p>
+        </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
