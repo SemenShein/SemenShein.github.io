@@ -8,10 +8,15 @@
     <meta name="robots" content="index, follow">
 <!--OpenGraph-->
     <meta property="og:title" content="This is my first page...">
-<!--   /* <link rel="stylesheet" href="css/loader.css">*/-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
         // Прелоадер
@@ -50,26 +55,55 @@
 <!--   Шапка-->
     <header>
         <nav>
-            <div class="logo">Семен Шеин</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="">Обо мне</a></li>
-                    <li><a href="">Услуги</a></li>
-                    <li><a href="">Кейсы</a></li>
-                    <li><a href="">Прайс</a></li>
-                    <li><a href="">Отзывы</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-2 col-7"><div class="logo">Семен Шеин</div></div>
+                    <div class="px-0 col-xxl-6 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">            
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">Обо мне</a></li>
+                            <li><a href="">Услуги</a></li>
+                            <li><a href="">Кейсы</a></li>
+                            <li><a href="">Прайс</a></li>
+                            <li><a href="">Отзывы</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                          <button class="btn btn-outline-secondary dropdown-toggle white-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Навигация
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Обо мне</button></li>
+                            <li><button class="dropdown-item" type="button">Услуги</button></li>
+                            <li><button class="dropdown-item" type="button">Кейсы</button></li>
+                            <li><button class="dropdown-item" type="button">Прайс</button></li>
+                            <li><button class="dropdown-item" type="button">Отзывы</button></li>
+                            <li><button class="dropdown-item" type="button">Контакты</button></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>    
             </div>
         </nav>
     </header>
+    
     <div class="main">
-        <div class="title_container animate__animated animate__backInLeft">
-            <h1>Привет<br> Я Семен Шеин</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <input type="button" value="Обо мне">
-            <input type="button" value="Мои работы">
-        </div>
+           <div class="container h-100">
+               <div class="row align-items-center h-100">
+                   <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title_container animate__animated animate__backInLeft mt-3">
+                            <h1>Привет<br> Я Семен Шеин</h1>
+                            <h4><i class="fa fa-css3 custom-css3" aria-hidden="true"></i>
+                            Фулл стек веб-разработчик</h4>
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои работы">
+                        </div>
+                   </div>
+               </div>
+            </div>
 <!--        Блок "обо мне"-->
         <div class="about_me">
             <h1>Обо мне</h1>
@@ -181,8 +215,14 @@
             <h2>ОТЗЫВЫ</h2>
             <div class="line"></div>
             <img src="img/man_rev.png" alt="#">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae assumenda totam dolor omnis tenetur unde laudantium atque quaerat voluptates? Veritatis doloribus esse culpa expedita a sint soluta rem, quibusdam, odit.</p>
-            <p><b>Михаил</b>,Ген.директор ПАО "Газпром"</p>
+            <figure>
+              <blockquote class="blockquote">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae assumenda totam dolor omnis tenetur unde laudantium atque quaerat voluptates? Veritatis doloribus esse culpa expedita a sint soluta rem, quibusdam, odit</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Михаил. Ген.директор <cite title="Source Title">ПАО "Газпром"</cite>
+              </figcaption>
+            </figure>
         </div>
 <!--        Блок контакты-->
         <div class="contacts">
@@ -211,5 +251,7 @@
             <p id="copy">Copyright © 2021 Андрей Браун. Design by Web</p>
         </footer>
     </div>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
 </body>
 </html>
