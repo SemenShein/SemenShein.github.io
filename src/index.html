@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow">
 <!--OpenGraph-->
     <meta property="og:title" content="This is my first page...">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,115 +105,158 @@
                </div>
             </div>
 <!--        Блок "обо мне"-->
-        <div class="about_me">
-            <h1>Обо мне</h1>
-            <div class="line"></div>
-            <img src="img/photo.png" alt="#">
-            <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
-            <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
-            <input type="submit" value="Скачать резюме">
-        </div>
+            
+            <div class="about_me container">
+               <div class="row justify-content-center">
+                   <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <h1>Обо мне</h1>
+                        <div class="line"></div>
+                   </div>
+               </div>
+                <img src="img/photo.png" alt="#">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-11 col-md-9 col-lg-8 text-center text-md-start">
+                        <p id="first" class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
+                        <p id="second" class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat consequatur facere cupiditate reprehenderit minus dolore distinctio velit aspernatur. Officia animi quo quis, eius enim, ullam blanditiis unde, voluptates expedita, officiis suscipit vitae?</p>
+                    </div>
+                </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <input type="submit" value="Скачать резюме">
+                        </div>
+                    </div>
+            </div>
+            
+        
 <!--        Блок "Что я умею"-->
-        <div class="i_can">
+       <div class="i_can_container">
+        <div class="i_can container">
             <h2>Что я умею</h2>
             <div class="line"></div>
-            <div class="design">
+            <div class="row justify-content-center text-center">
+            
+            <div class="design col-12 col-sm-6 col-md-3 mt-5">
                 <img src="img/note.png" alt="#">
                 <h4>Веб-дизайн</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laborum.</p>
             </div>
-            <div class="develop">
+            <div class="develop col-12 col-sm-6 col-md-3 mt-5 ">
                 <img src="img/sign.png" alt="#">
                 <h4>Разработка</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laborum.</p>
             </div>
-            <div class="seo">
+            <div class="seo col-12 col-sm-6 col-md-3 mt-5 ">
                 <img src="img/rocket.png" alt="#">
                 <h4>СЕО-Оптимизация</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laborum.</p>
             </div>
-            <div class="marketing">
+            <div class="marketing col-12 col-sm-6 col-md-3 mt-5">
                 <img src="img/gram.png" alt="#">
                 <h4>Маркетинг</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laborum.</p>
             </div>
-        </div>
-<!--        Блок кейсов-->
-        <div class="case">
-            <h2>Кейсы</h2>
-            <div class="line"></div>
-            <span id="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consequatur officia perspiciatis</span>
-            <div class="gallery">
-               <img src="img/case_photo.png" alt="">
-                <div class="descript">
-                    <h3>CLIENT:</h3>
-                    <span>Какая-то компания</span>
-                    <h3>WEBSITE:</h3>
-                    <span>http://www.somedomain.com</span>
-                    <h3 id="pro_name">Название проекта</h3>
-                    <p id="pro_name_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum qui architecto, unde odio maxime accusantium quos ipsa similique! Odio voluptatem rem officiis quod recusandae quisquam dolorum doloremque voluptates! Unde, deserunt, vitae libero dignissimos officia maxime iste rerum quas est consequuntur.</p>
-                    <input type="button" value="visit live site">
-                </div>
             </div>
         </div>
+        </div>
+<!--        Блок кейсов-->
+        <div class="case_container">
+            <div class="case container justify-content-center">
+                <h2 class="text-center">Кейсы</h2>
+                <div class="line"></div>
+                <p id="sub" class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consequatur officia perspiciatis</p>
+                <div class="gallery">
+                    <img src="img/case_photo.png" alt="">
+                    <div class="descript">
+                       <div class="row content-center text-center">
+                           <div class="firs_block col-12 col-sm-6 col-md-2">
+                        <h3>CLIENT:</h3>
+                        <p>Какая-то компания</p>
+                        <h3>WEBSITE:</h3>
+                        <p>http://www.somedomain.com</p>
+                            </div>
+                            <div class="sec_block col-12 col-sm-6 col-md-10">
+                        <h3 id="pro_name">Название проекта</h3>
+                        <p id="pro_name_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum qui architecto, unde odio maxime accusantium quos ipsa similique! Odio voluptatem rem officiis quod recusandae quisquam dolorum doloremque voluptates! Unde, deserunt, vitae libero dignissimos officia maxime iste rerum quas est consequuntur.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <input type="button" value="ПОСЕТИТЬ САЙТ" class="d-block sm-justify-content-centr">
+                    </div>
+                </div>
+            </div>
+        
+        
 <!--        Блок рассчета стоимости-->
-       <div class="price">
-            <h2>Расчет стоимости</h2>
-            <h3>ТИП САЙТА:</h3>
-            <form action="#">
-                <select name="list1" id="list1">
+       <div class="price container">
+            <h2 class="text-center">Расчет стоимости</h2>
+            <h3 class="">ТИП САЙТА:</h3>
+            <form action="#" class="row">
+                <select class="form-select" name="list1" id="list1">
                     <option value="opt1">Выберите пункт...</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
                 </select>
+            
             <h3>ДИЗАЙН:</h3>
-                <select name="list2" id="list2">
+                <select class="form-select" name="list2" id="list2">
                     <option value="opt1">Выберите пункт...</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
                 </select>
             <h3>АДАПТИВНОСТЬ:</h3>
-                <select name="list3" id="list3">
+                <select class="form-select" name="list3" id="list3">
                     <option value="opt1">Выберите пункт...</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
                 </select>
             </form>
            <div id="total_line"></div>
-            <div class="total">
-                <p>Cроки 0</p>
-                <p>Стоимость 0</p>
+            <div class="total container">
+                    <div class="row">
+                        <p class="col-11">Cроки</p> <p class="col-1">0</p>
+                        <p class="col-11">Стоимость</p> <p class="col-1">0</p>
+                    </div>
             </div>
         </div>
 <!--       Блок статистики-->
-        <div class="stat">
+        
+            <div class="stat_container"> 
+            <div class="stat container">
+              
            <h2>Немного статистики</h2>
            <div class="line"></div>
-           <div class="client">
+           <div class="row justify-content-center text-center">
+           <div class="client col-12 col-sm-6 col-md-3 mt-5">
                <img src="img/smile.png" alt="#">
                <h3>120</h3>
                <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
            </div>
-           <div class="hours">
+           <div class="hours col-12 col-sm-6 col-md-3 mt-5">
                <img src="img/parent.png" alt="#">
                <h3>4,600</h3>
                <p>ЧАСОВ РАБОТЫ</p>
            </div>
-           <div class="project_end">
+           <div class="project_end col-12 col-sm-6 col-md-3 mt-5">
                <img src="img/check.png" alt="#">
                <h3>120</h3>
                <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
            </div>
-           <div class="awards">
+           <div class="awards col-12 col-sm-6 col-md-3 mt-5">
                <img src="img/cup.png" alt="#">
                <h3>120</h3>
                <p>НАГРАД ПОЛУЧЕНО</p>
            </div>
         </div>
+        </div>
+        </div>
 <!--       Блок отзывы-->
-        <div class="reviews">
-            <h2>ОТЗЫВЫ</h2>
-            <div class="line"></div>
+        <div class="reviews container">
+           <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <h1>Отзывы</h1>
+                        <div class="line"></div>
+                    </div>
+            </div>
             <img src="img/man_rev.png" alt="#">
             <figure>
               <blockquote class="blockquote">
@@ -225,33 +268,55 @@
             </figure>
         </div>
 <!--        Блок контакты-->
-        <div class="contacts">
+       <div class="contacts_container">
+        <div class="contacts container">
+           <div class="row justify-content-center text-center">
             <h2>Мои контакты</h2>
             <div class="line"></div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consectetur earum labore.</span>
-            
-            <img src="img/geo.png" alt="#" id="geo">
-            <p>Санкт-Петербург<br>Невский проспект 11</p>
-            <img src="img/mail.png" alt="#" id="mail">
-            <p>info@companyname.com</p>
-            <img src="img/phone.png" alt="#" id="phone">
-            <p>+7 999 999-99-99</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consectetur earum labore.</p>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="position col-12 col-sm-12 col-md-3 text-center mt-3">
+                    <img src="img/geo.png" alt="#" id="geo">
+                    <p>Санкт-Петербург<br>Невский проспект 11</p>
+                </div>
+                <div class="position col-12 col-sm-12 col-md-3 text-center mt-3">
+                    <img src="img/mail.png" alt="#" id="mail">
+                    <p>info@companyname.com</p>
+                </div>
+                <div class="position col-12 col-sm-12 col-md-3 text-center mt-3">
+                    <img src="img/phone.png" alt="#" id="phone">
+                    <p>+7 999 999-99-99</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
             <h3>оставьте мне сообщение</h3>
-            
-            <form action="#">
-                <input type="text"name="text_input" value="" placeholder="Имя" id="name">
-                <input type="text"name="text_input" value="" placeholder="Email" id="mail">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение" ></textarea>
-                <input type="submit" value="Отправить" id="button">
-            </form>
-        <div class="card">
-            <div id="here">i'am here</div>
-        </div>
+            </div>
+            <div class="container">
+               <div class="row justify-content-center text-center">
+                    <form action="#" class="row justify-content-center text-center">
+                        <input class="col-5" type="text"name="text_input" value="" placeholder="Имя" id="name">
+                        <input class="col-5" type="text"name="text_input" value="" placeholder="Email" id="mail">
+                        <textarea class=" col-11 mt-3" name="message" id="message" cols="30" rows="10" placeholder="Сообщение" ></textarea>
+                        <input class=" col-2 mt-3" type="submit" value="Отправить" id="button">
+                    </form>
+                </div>
+            </div>
+            </div>
+            </div>
+<!--
+            <div class="card_container">
+               <img src="img/card.jpg" alt="card">
+                <div class="card container">
+                    <div id="here">i'am here</div>
+                </div>
+            </div>
+-->
         <footer>
             <p id="copy">Copyright © 2021 Андрей Браун. Design by Web</p>
         </footer>
-    </div>
     <script src="js/bootstrap.bundle.min.js">
     </script>
+    
 </body>
 </html>
