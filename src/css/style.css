@@ -500,8 +500,7 @@ h4{
 
 .contacts_container{
     background:url(../img/contact_bg.jpg) 50%  no-repeat;
-    max-width:100%;
-    height:800px;
+    height:808px;
 }
 .contacts{
     width:100%;
@@ -543,9 +542,9 @@ form #mail{
     margin-left:10px;
 }
 form textarea{
-    height:95px;
+    height:55px;
     background-color:#d3d6dc;
-    margin-top:50px;
+    margin-top:30px;
 }
 #button{
     width:140px;
@@ -581,13 +580,12 @@ form textarea{
 #here{
     width:135px;
     height:55px;
-    
     background-color:#fff;
     
     
     text-transform:uppercase;
     color:black;
-    text-align: center;
+    text-align:center;
     padding-top:20px;
     font-weight:bold;
     font-size:17px;
@@ -596,12 +594,11 @@ form textarea{
 footer{
     width:100%;
     background:#344051;
-    max-width:100%;
-    min-height:20%;
+    height:100px;
 }
 #copy{
     text-align:center;
     font-size:15px;
     color:#fff;
-    padding-top:40px;
+    padding-top:45px;
 }
